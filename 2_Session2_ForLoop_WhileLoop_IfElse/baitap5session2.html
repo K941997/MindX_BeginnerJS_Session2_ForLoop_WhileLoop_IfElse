@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let userName = prompt(`Nhập userName: `);
+        userName = String(userName);
+        let passWord = prompt(`Nhập password: `);
+        passWord = Number(passWord);
+
+        //Cách 1:
+        if (userName === 'MindX' && passWord === 123456){
+            console.log(`Đăng nhập thành công`);
+            alert(`Đăng nhập thành công`);
+        }
+        else if (userName !== 'MindX'){
+            alert ('Sai username');
+        }
+        else if (userName === 'MindX' && passWord !== 123456){
+            alert('Sai password');
+        }
+        else{
+            console.log(`Nhập sai tài khoản`);
+            alert(`Nhập sai tài khoản`);
+        }
+
+        //Cách 2:
+        if (userName === 'MindX'){
+            if (passWord === 123456){
+                alert('Đăng nhập thành công');
+            }
+            else{
+                alert('Sai password')
+            }
+        }
+        else {
+            alert('Sai username')
+        }
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let thang = prompt('Nhập vào tháng mấy: ');
+
+        if (thang >=1 && thang <=3){
+            console.log(` Tháng ${thang} là Mùa Xuân `);
+        }
+        else if (thang >= 4 && thang <= 6){
+            console.log(` Tháng ${thang} Mùa Hạ `);
+        }
+        else if (thang >= 7 && thang <= 9){
+            console.log(`Tháng ${thang} Mùa Thu`);
+        }
+        else if (thang >= 10 && thang <= 12){
+            console.log(`Tháng ${thang} Mùa Đông`);
+        }
+        else{
+            console.log(` Tháng ${thang} Không là mùa nào cả`);
+        }
+
+    </script>
+</body>
+</html>
